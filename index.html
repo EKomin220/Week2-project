@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your 5-a-day Quiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-yellow-50 min-h-screen flex items-center justify-center p-10 font-mono">
+    <div class="bg-slate-700 rounded-md shadow-md p-10 max-w-3xl w-full">
+      <h1 class="text-2xl font-semibold text-center mb-8 text-white"> &#127813&#129382&#129365 5 A Day Quiz &#129365&#129382&#127813 </h1>
+      <button id="start-button" 
+       class="w-full bg-yellow-500 hover:bg-yellow-600 font-semibold text-white p-5 rounded-md transition duration-500 ease-in-out" >
+        Start Quiz
+      </button>
+      
+      <div id="quiz" class="hidden">
+        <div id="question-container"></div>
+        <div id="result" class="hidden text-center m-5"></div>
+      </div>
+    </div>
+  </body>
+  <script src="quiz.js"></script>
+</html>
